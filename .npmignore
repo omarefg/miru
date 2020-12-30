@@ -1,5 +1,5 @@
 src
 .eslintignore
-.eslintrc
+.eslintrc.js
 .gitignore
 babel.config.json

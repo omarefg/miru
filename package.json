@@ -1,6 +1,6 @@
 {
   "name": "@omarefg/miru",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Miru is a lightweight library that allows you to create reactive components using vanilla javascript",
   "main": "lib/index.js",
   "private": false,
