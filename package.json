@@ -2,10 +2,11 @@
   "name": "@omarefg/miru",
   "version": "0.0.2",
   "description": "Miru is a lightweight library that allows you to create reactive components using vanilla javascript",
-  "main": "index.js",
+  "main": "lib/index.js",
   "private": false,
   "scripts": {
-    "publish": "npm publish --access=public"
+    "publish": "npm publish --access=public",
+    "transpile": "NODE_ENV=production && rm -rf ./lib && mkdir lib && npx babel src/ --out-dir lib --copy-files"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,16 @@
   "homepage": "https://github.com/omarefg/miru#readme",
   "dependencies": {
     "lodash": "4.17.20"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "eslint": "7.16.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0"
   }
 }
